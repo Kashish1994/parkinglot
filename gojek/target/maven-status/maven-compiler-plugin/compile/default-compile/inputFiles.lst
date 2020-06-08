@@ -7,3 +7,4 @@
 /Users/kashish/IdeaProjects/gojek/src/main/java/com/gojek/parkinglot/service/ParkingService.java
 /Users/kashish/IdeaProjects/gojek/src/main/java/com/gojek/parkinglot/constants/Commands.java
 /Users/kashish/IdeaProjects/gojek/src/main/java/com/gojek/parkinglot/utils/GoHelper.java
+/Users/kashish/IdeaProjects/gojek/src/main/java/com/gojek/parkinglot/exceptions/GoException.java

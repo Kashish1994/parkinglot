@@ -19,6 +19,12 @@ public class ParkingServiceImpl implements ParkingService {
         parking.parkCar(car);
     }
 
+    @Override
+    public void leaveCar(int slotNumber) throws Exception {
+        Parking parking = Parking.getInstance(0, false);
+        parking.leaveCar(slotNumber);
+    }
+
     private void createSlots(Parking parking) {
         Slot[] slots = new Slot[parking.getTotalSlots()];
         int slotNumber = 1;
@@ -28,6 +34,16 @@ public class ParkingServiceImpl implements ParkingService {
             slotNumber++;
         }
         parking.setSlots(slots);
-        parking.printSlotDetails();
+    }
+
+    @Override
+    public void getParkingLotStatus() throws Exception {
+        Parking.getInstance(0, false).printSlotDetails();
+    }
+
+    @Override
+    public void query(String cmd, String query) throws Exception{
+        Parking.getInstance(0, false).queryParkingLot(cmd,query);
+
     }
 }
